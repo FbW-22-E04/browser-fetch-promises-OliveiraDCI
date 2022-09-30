@@ -1,7 +1,13 @@
-// The following line makes sure your styles are included in the project. Don't remove this.
-import '../styles/main.scss';
-// Import any additional modules you want to include below \/
+import "../styles/main.scss";
 
+setTimeout(init, 60000);
 
-// \/ All of your javascript should go here \/
+function init() {
+  let modal = document.getElementById("myModal");
+  let close = document.querySelector(".close");
 
+  modal.style.display = "block";
+  close.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
